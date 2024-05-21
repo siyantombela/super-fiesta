@@ -1,0 +1,36 @@
+# Python files
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment files
+*.env
+venv/
+env/
+
+# IDE files
+.vscode/
+.pycharm/
+.idea/
+
+# Logs
+*.log
+logs/
+
+# Cache files
+__pycache__/
+.cache/
+
+# Data files
+data/
+
+# Output files
+.output/
+.solutions/
+.obsidian/
+
+# Other files
+*.iml
+*.ipynb
+*.csv
+*.txt
