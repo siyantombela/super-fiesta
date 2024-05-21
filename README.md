@@ -32,7 +32,7 @@ To set up the environment, follow these steps:
 ### Running the Project
 
 1. Run the script using Python: `python flexi-tech-team.py`
-2. The output will be written to a Markdown file with a timestamp in the `solutions` directory.
+2. The output will be written to a Markdown file with a timestamp in the `.solutions` directory.
 
 
  Contributing
