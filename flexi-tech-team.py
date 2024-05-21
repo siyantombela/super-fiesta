@@ -82,7 +82,7 @@ output = crew.kickoff()
 
 # Write the output to a Markdown file with a timestamp
 timestamp = datetime.datetime.now().strftime("%Y-%m-%d-%H-%M-%S")
-output_filename = f"solutions/output-{timestamp}.md"
+output_filename = f".solutions/output-{timestamp}.md"
 with io.open(output_filename, 'w', encoding='utf-8') as output_file:
     if isinstance(output, dict):
         for task_name, task_output in output.items():
