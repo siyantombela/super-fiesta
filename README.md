@@ -23,9 +23,9 @@ To set up the environment, follow these steps:
 2. Create a file named `development-task.txt` in the project directory, containing the task description.
 3. Set the following environment variables:
 
-**OPENAI_API_BASE**='https://api.groq.com/openai/v1' 
-**OPENAI_MODEL_NAME**='llama3-70b-8192' 
-**OPENAI_API_KEY**='YOUR_GROQ_APIKEY'
+- **OPENAI_API_BASE**='https://api.groq.com/openai/v1' 
+- **OPENAI_MODEL_NAME**='llama3-70b-8192'
+- **OPENAI_API_KEY**='YOUR_GROQ_APIKEY'
 
 **Important:** Replace `YOUR_GROQ_APIKEY` with your actual GROQ API key. **Do not hardcode your API key in the code or documentation.**
 
