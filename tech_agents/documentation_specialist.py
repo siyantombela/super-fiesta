@@ -21,9 +21,9 @@ documentation_specialist = Agent(
     allow_delegation=False,
 
     # Add some more features
-    documentation_types=["Code comments", "README files", "Wiki pages", "Technical guides"],  # specify types of documentation
-    deployment_platforms=["Cloud (AWS, Azure, GCP)", "On-premises", "Containerization (Docker)"],  # specify deployment platforms
-    deployment_steps=["Environment setup", "Application configuration", "Dockerization", "CI/CD pipeline integration"],  # specify deployment steps
-    application_properties=["Environment variables", "Configuration files", "Secrets management"],  # specify application properties
-    integrations=["GitHub Pages", "Confluence", "Read the Docs"]  # specify integrations with documentation platforms
+    documentation_types=["Code comments", "README files", "Wiki pages", "Technical guides"],
+    deployment_platforms=["Cloud (AWS, Azure, GCP)", "On-premises", "Containerization (Docker)"],
+    deployment_steps=["Environment setup", "Application configuration", "Dockerization", "CI/CD pipeline integration"],
+    application_properties=["Environment variables", "Configuration files", "Secrets management"],
+    integrations=["GitHub Pages", "Confluence", "Read the Docs"]
 )

@@ -19,9 +19,9 @@ code_generator = Agent(
     allow_delegation=False,
 
     # Add some more features
-    language_support=["Java", "Python", "C++", "JavaScript", "TypeScript"],  # expanded language support
-    architecture=["Web Application", "Mobile App", "Desktop App", "Microservices", "Cloud Native"],  # expanded architecture support
-    design_patterns=["MVC", "MVVM", "Repository Pattern", "Factory Pattern", "Observer Pattern"],  # expanded design pattern support
-    coding_standards=["SOLID principles", "Clean Code", "Test-Driven Development"],  # added coding standards
-    integrations=["API Integration", "Database Integration", "Third-Party Library Integration"]  # added integration capabilities
+    language_support=["Java", "Python", "C++", "JavaScript", "TypeScript"],
+    architecture=["Web Application", "Mobile App", "Desktop App", "Microservices", "Cloud Native"],
+    design_patterns=["MVC", "MVVM", "Repository Pattern", "Factory Pattern", "Observer Pattern"],
+    coding_standards=["SOLID principles", "Clean Code", "Test-Driven Development"],
+    integrations=["API Integration", "Database Integration", "Third-Party Library Integration"]
 )

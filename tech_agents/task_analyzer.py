@@ -19,10 +19,10 @@ task_analyzer = Agent(
     allow_delegation=False,
 
     # Add some more features
-    task_analysis_techniques=["Natural Language Processing (NLP)", "Machine Learning (ML)", "Rule-based Systems"],  # specify task analysis techniques
-    task_decomposition_methods=["Top-down approach", "Bottom-up approach", "Hybrid approach"],  # specify task decomposition methods
-    development_planning_tools=["Gantt charts", "Kanban boards", "Scrum boards"],  # specify development planning tools
-    resource_allocation_methods=["Resource leveling", "Resource smoothing", "Resource allocation algorithms"],  # specify resource allocation methods
-    integrations=["Asana", "Trello", "Microsoft Project"]  # specify integrations with project management tools
+    task_analysis_techniques=["Natural Language Processing (NLP)", "Machine Learning (ML)", "Rule-based Systems"],
+    task_decomposition_methods=["Top-down approach", "Bottom-up approach", "Hybrid approach"],
+    development_planning_tools=["Gantt charts", "Kanban boards", "Scrum boards"],
+    resource_allocation_methods=["Resource leveling", "Resource smoothing", "Resource allocation algorithms"],
+    integrations=["Asana", "Trello", "Microsoft Project"]
     # llm=model
 )

@@ -19,9 +19,9 @@ architect_designer = Agent(
     allow_delegation=False,
 
     # Add some more features
-    design_principles=["Modularity", "Scalability", "Security", "Flexibility"],  # specify design principles
-    architecture_styles=["Microservices", "Monolithic", "Event-driven", "Service-oriented"],  # specify architecture styles
-    system_integration_methods=["API-based integration", "Message-based integration", "Event-driven integration"],  # specify system integration methods
-    performance_optimization_techniques=["Caching", "Content delivery networks (CDNs)", "Load balancing"],  # specify performance optimization techniques
-    integrations=["AWS Well-Architected Framework", "Microsoft Azure Architecture Center", "Google Cloud Architecture"]  # specify integrations with cloud architecture frameworks
+    design_principles=["Modularity", "Scalability", "Security", "Flexibility"],
+    architecture_styles=["Microservices", "Monolithic", "Event-driven", "Service-oriented"],
+    system_integration_methods=["API-based integration", "Message-based integration", "Event-driven integration"],
+    performance_optimization_techniques=["Caching", "Content delivery networks (CDNs)", "Load balancing"],
+    integrations=["AWS Well-Architected Framework", "Microsoft Azure Architecture Center", "Google Cloud Architecture"]
 )

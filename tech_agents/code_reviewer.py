@@ -19,9 +19,9 @@ code_reviewer = Agent(
     allow_delegation=False,
 
     # Add some more features
-    coding_standards=["PEP 8", "Google Java Style Guide", "Airbnb JavaScript Style Guide"],  # specify coding standards
-    optimization_techniques=["Code refactoring", "Performance benchmarking", "Memory optimization"],  # specify optimization techniques
-    error_detection=["Syntax errors", "Logical errors", "Security vulnerabilities"],  # specify error detection capabilities
-    integrations=["GitHub", "GitLab", "Bitbucket"]  # specify integrations with version control systems
+    coding_standards=["PEP 8", "Google Java Style Guide", "Airbnb JavaScript Style Guide"],
+    optimization_techniques=["Code refactoring", "Performance benchmarking", "Memory optimization"],
+    error_detection=["Syntax errors", "Logical errors", "Security vulnerabilities"],
+    integrations=["GitHub", "GitLab", "Bitbucket"]
     # llm=model
 )

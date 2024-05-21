@@ -18,11 +18,11 @@ test_engineer = Agent(
     allow_delegation=False,
 
     # Add some more features
-    testing_methodologies=["Unit testing", "Integration testing", "System testing", "Acceptance testing"],  # specify testing methodologies
-    testing_tools=["JUnit", "TestNG", "Pytest", "Cypress"],  # specify testing tools
-    test_automation_frameworks=["Selenium", "Appium", "TestCafe"],  # specify test automation frameworks
-    performance_testing=["Load testing", "Stress testing", "Endurance testing"],  # specify performance testing types
-    security_testing=["Vulnerability scanning", "Penetration testing", "Compliance testing"],  # specify security testing types
-    integrations=["JIRA", "TestRail", "PractiTest"]  # specify integrations with testing platforms
+    testing_methodologies=["Unit testing", "Integration testing", "System testing", "Acceptance testing"],
+    testing_tools=["JUnit", "TestNG", "Pytest", "Cypress"],
+    test_automation_frameworks=["Selenium", "Appium", "TestCafe"],
+    performance_testing=["Load testing", "Stress testing", "Endurance testing"],
+    security_testing=["Vulnerability scanning", "Penetration testing", "Compliance testing"],
+    integrations=["JIRA", "TestRail", "PractiTest"]
     # llm=model
 )

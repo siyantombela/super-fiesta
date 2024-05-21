@@ -21,10 +21,10 @@ deployment_manager = Agent(
     allow_delegation=False,
 
     # Add some more features
-    deployment_strategies=["Rolling updates", "Blue-green deployments", "Canary releases"],  # specify deployment strategies
-    deployment_tools=["Kubernetes", "Ansible", "Puppet"],  # specify deployment tools
-    monitoring_tools=["Prometheus", "Grafana", "New Relic"],  # specify monitoring tools
-    performance_optimization_techniques=["Caching", "Content delivery networks (CDNs)", "Load balancing"],  # specify performance optimization techniques
-    integrations=["AWS CodeDeploy", "Google Cloud Deploy", "Microsoft Azure DevOps"]  # specify integrations with cloud deployment platforms
+    deployment_strategies=["Rolling updates", "Blue-green deployments", "Canary releases"],
+    deployment_tools=["Kubernetes", "Ansible", "Puppet"],
+    monitoring_tools=["Prometheus", "Grafana", "New Relic"],
+    performance_optimization_techniques=["Caching", "Content delivery networks (CDNs)", "Load balancing"],
+    integrations=["AWS CodeDeploy", "Google Cloud Deploy", "Microsoft Azure DevOps"]
     # llm=model
 )
