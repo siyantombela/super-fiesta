@@ -25,7 +25,7 @@ understand_task = Task(
 
 specify_requirements = Task(
     description="Convert the detailed tasks from 'understand_task' into clear and concise requirements and "
-                "specifications.",
+               "specifications.",
     agent=requirement_specifier,
     expected_output="Technical specifications that are unambiguous, consistent, and testable."
 )

@@ -18,5 +18,6 @@ code_generator = Agent(
     architecture=["Web Application", "Mobile App", "Desktop App", "Microservices", "Cloud Native"],
     design_patterns=["MVC", "MVVM", "Repository Pattern", "Factory Pattern", "Observer Pattern"],
     coding_standards=["SOLID principles", "Clean Code", "Test-Driven Development"],
-    integrations=["API Integration", "Database Integration", "Third-Party Library Integration"]
+    integrations=["API Integration", "Database Integration", "Third-Party Library Integration"],
+    context=["code_reviewer"]
 )

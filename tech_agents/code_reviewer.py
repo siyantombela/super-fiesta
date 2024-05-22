@@ -11,12 +11,14 @@ code_reviewer = Agent(
               "errors, optimize performance, and guarantee compliance with established coding standards and best "
               "practices. My expertise ensures that code is reliable, efficient, and maintainable.",
     verbose=True,
-    allow_delegation=False,
+    allow_delegation=True,
 
     # Add some more features
     coding_standards=["PEP 8", "Google Java Style Guide", "Airbnb JavaScript Style Guide"],
     optimization_techniques=["Code refactoring", "Performance benchmarking", "Memory optimization"],
     error_detection=["Syntax errors", "Logical errors", "Security vulnerabilities"],
-    integrations=["GitHub", "GitLab", "Bitbucket"]
+    integrations=["GitHub", "GitLab", "Bitbucket"],
+    context=["code_generator"]
+
     # llm=model
 )

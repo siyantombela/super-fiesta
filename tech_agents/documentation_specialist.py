@@ -23,5 +23,6 @@ documentation_specialist = Agent(
     application_properties=["Environment variables", "Configuration files", "Secrets management"],
     integrations=["GitHub Pages", "Confluence", "Read the Docs"],
     refactored_code_consideration=True,
-    code_included_in_report=True
+    code_included_in_report=True,
+    context=["code_generator", "test_engineer", "documentation_specialist"]
 )
