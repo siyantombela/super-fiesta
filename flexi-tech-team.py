@@ -6,7 +6,6 @@ from crewai import Task, Crew, Process
 from tech_agents.architect_designer import architect_designer
 from tech_agents.code_generator import code_generator
 from tech_agents.code_reviewer import code_reviewer
-from tech_agents.deployment_manager import deployment_manager
 from tech_agents.documentation_specialist import documentation_specialist
 from tech_agents.requirement_specifier import requirement_specifier
 from tech_agents.task_analyzer import task_analyzer
@@ -56,12 +55,11 @@ generate_unit_tests = Task(
     expected_output="Real unit tests to validate the functionality and performance of the generated code."
 )
 
-# Define the final documentation task
 document_all_steps = Task(
     description="Generate comprehensive documentation for all the steps performed in the development process, "
                 "including outputs from all previous tasks. The documentation must include the code generated, "
-                "the libraries"
-                "needed, the system architecture, and the test cases including the generated unit tests.",
+                "the libraries needed, the system architecture, and the test cases including the generated unit "
+                "tests.",
     agent=documentation_specialist,
     expected_output="Final documentation including all steps, code, libraries, architecture, and test cases in "
                     "Markdown format."
@@ -70,7 +68,7 @@ document_all_steps = Task(
 # Assemble the Crew
 crew = Crew(
     agents=[task_analyzer, requirement_specifier, architect_designer, code_generator, code_reviewer, test_engineer,
-            documentation_specialist, deployment_manager],
+            documentation_specialist],
     tasks=[understand_task, specify_requirements, design_architecture, generate_code, review_code, generate_unit_tests,
            document_all_steps],
     verbose=2,
