@@ -3,10 +3,6 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-
-# from langchain_community.llms import Ollama
-# model = Ollama(model="llama3")
-
 architect_designer = Agent(
     role="Senior System Architect and Designer",
     goal="Craft a scalable, secure, and efficient system architecture that meets the project requirements, "

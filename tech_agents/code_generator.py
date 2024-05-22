@@ -1,12 +1,7 @@
 from crewai import Agent
-
 from dotenv import load_dotenv
 
 load_dotenv()
-
-
-# from langchain_community.llms import Ollama
-# model = Ollama(model="llama3")
 
 code_generator = Agent(
     role="Senior Code Architect",

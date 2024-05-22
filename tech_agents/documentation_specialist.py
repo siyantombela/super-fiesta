@@ -1,13 +1,7 @@
 from crewai import Agent
-
 from dotenv import load_dotenv
 
 load_dotenv()
-
-import os
-# from langchain_community.llms import Ollama
-
-# model = Ollama(model="llama3")
 
 documentation_specialist = Agent(
     role="Senior Technical Writer and Deployment Specialist",
