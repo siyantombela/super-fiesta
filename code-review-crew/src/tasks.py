@@ -9,7 +9,8 @@ class CodeReviewTasks:
                     Analyze the provided code for issues and suggest improvements:\n\n{code}"""),
             agent=agent,
             expected_output=dedent(f"""\
-                    Analysis of code issues and suggestions for improvement.""")
+                    Analysis of code issues and suggestions for improvement."""),
+            output_file="../../.solutions/reviews/code_analysis.md"
 
         )
 
@@ -19,7 +20,8 @@ class CodeReviewTasks:
                     Provide detailed recommendations and findings based on the analysis from 'analyze_code_task'."""),
             agent=agent,
             expected_output=dedent(f"""\
-                    Recommendations for improvement.""")
+                    Recommendations for improvement."""),
+            output_file="../../.solutions/reviews/recommendations.md"
         )
 
     def improve_code_task(self, agent):
@@ -28,7 +30,8 @@ class CodeReviewTasks:
                     Improve the code based on the recommendations from 'provide_recommendations_task'."""),
             agent=agent,
             expected_output=dedent(f"""\
-                    Improved code with optimized performance, reduced errors, and adherence to coding standards.""")
+                    Improved code with optimized performance, reduced errors, and adherence to coding standards."""),
+            output_file="../../.solutions/reviews/improved_code.md"
         )
 
     def document_improvements_task(self, agent):
@@ -40,5 +43,6 @@ class CodeReviewTasks:
             agent=agent,
             expected_output=dedent(f"""\
                     User manuals, API documentation, technical guides, and detailed changes and you must include all 
-                    the code generated in the process. from 'improve_code_task'""")
+                    the code generated in the process. from 'improve_code_task'"""),
+            output_file="../../.solutions/reviews/review_report.md"
         )
