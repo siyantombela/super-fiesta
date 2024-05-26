@@ -1,0 +1,27 @@
+analyze_code:
+  description: >
+    Analyze the provided code for issues and suggest improvements:
+    \n\n{code}
+  expected_output: >
+    Analysis of code issues and suggestions for improvement.
+
+provide_recommendations:
+  description: >
+    Provide detailed recommendations and findings based on the analysis from 'analyze_code'.
+  expected_output: >
+    Recommendations for improvement.
+
+improve_code:
+  description: >
+    Improve the code based on the recommendations from 'provide_recommendations'.
+  expected_output: >
+    Improved code with optimized performance, reduced errors, and adherence to coding standards.
+
+document_improvements:
+  description: >
+    Generate detailed documentation for the improved code and development process 
+    from 'improve_code'. Include the code improvements, libraries needed, 
+    and detailed changes made.
+  expected_output: >
+    User manuals, API documentation, technical guides, and detailed changes 
+    made from 'improve_code'. Include all the code generated in the process.

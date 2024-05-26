@@ -1,14 +1,20 @@
 import io
+import os
 from datetime import datetime
 
+# Start using AgentOps with just 3 lines of code
+import agentops
+from crewai import Crew
 from dotenv import load_dotenv
-from crewai import Crew, Process
-from tasks import CodeReviewTasks
+
 from agents import CodeReviewAgents
+from tasks import CodeReviewTasks
 
 
 def main():
     load_dotenv()
+
+    agentops.init(os.getenv('AGENT_OPS_API_KEY'))
 
     print(f"Welcome to Code Review Crew!")
     print(f"This crew will review your code for issues, optimize code, and recommend improvements.")
@@ -42,7 +48,8 @@ def main():
 
     # create crew
     crew = Crew(
-        agents=[code_analyzer_agent, recommendation_provider_agent, code_improver_agent, documentation_specialist_agent],
+        agents=[code_analyzer_agent, recommendation_provider_agent, code_improver_agent,
+                documentation_specialist_agent],
         tasks=[analyze_code_task, provide_recommendations_task, improve_code_task, document_improvements_task],
         verbose=2
     )
@@ -56,6 +63,8 @@ def main():
         f.write(output)
 
     print(f"Your code review has been completed and saved to 'flexi-code-reviewer-{timestamp}.md'.")
+
+    print(f"Crew Usage ", crew.usage_metrics)
 
 
 if __name__ == "__main__":

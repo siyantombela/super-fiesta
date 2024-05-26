@@ -1,16 +1,15 @@
 [tool.poetry]
-name = "dev_team"
+name = "polyglot_code_reviewer"
 version = "0.1.0"
-description = "dev-team using crewAI"
+description = "polyglot-code-reviewer using crewAI"
 authors = ["Your Name <you@example.com>"]
 
 [tool.poetry.dependencies]
 python = ">=3.10,<=3.13"
 crewai = {extras = ["tools"], version = "^0.30.11"}
-streamlit = "^1.35.0"
 
 [tool.poetry.scripts]
-dev_team = "dev_team.main:run"
+polyglot_code_reviewer = "polyglot_code_reviewer.main:run"
 
 [build-system]
 requires = ["poetry-core"]
