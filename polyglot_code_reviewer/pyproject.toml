@@ -7,6 +7,8 @@ authors = ["Your Name <you@example.com>"]
 [tool.poetry.dependencies]
 python = ">=3.10,<=3.13"
 crewai = {extras = ["tools"], version = "^0.30.11"}
+agentops = "^0.1.12"
+python-dotenv = "^1.0.1"
 
 [tool.poetry.scripts]
 polyglot_code_reviewer = "polyglot_code_reviewer.main:run"

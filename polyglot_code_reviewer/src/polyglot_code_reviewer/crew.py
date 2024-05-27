@@ -1,3 +1,7 @@
+import os
+
+import agentops
+from agentops import track_agent
 from crewai import Agent, Crew, Process, Task
 from crewai.project import CrewBase, agent, crew, task
 
@@ -14,7 +18,10 @@ class PolyglotCodeReviewerCrew():
     agents_config = 'config/agents.yaml'
     tasks_config = 'config/tasks.yaml'
 
+    agentops.init(os.getenv('AGENT_OPS_API_KEY'))
+
     @agent
+    @track_agent(name='code_analyzer')
     def code_analyzer(self) -> Agent:
         return Agent(
             config=self.agents_config['code_analyzer'],
@@ -24,6 +31,7 @@ class PolyglotCodeReviewerCrew():
         )
 
     @agent
+    @track_agent(name='recommendation_provider')
     def recommendation_provider(self) -> Agent:
         return Agent(
             config=self.agents_config['recommendation_provider'],
@@ -32,6 +40,7 @@ class PolyglotCodeReviewerCrew():
         )
 
     @agent
+    @track_agent(name='code_improver')
     def code_improver(self) -> Agent:
         return Agent(
             config=self.agents_config['code_improver'],
@@ -40,6 +49,7 @@ class PolyglotCodeReviewerCrew():
         )
 
     @agent
+    @track_agent(name='documentation_specialist')
     def documentation_specialist(self) -> Agent:
         return Agent(
             config=self.agents_config['documentation_specialist'],
